@@ -132,3 +132,18 @@ ul {
   color: #fff;
   cursor: pointer;
 }
+.form-container .form-wrapper .navigate-link-wrapper {
+  text-align: center;
+}
+.form-container .form-wrapper .navigate-link-wrapper a.navigate-link {
+  color: #0059b3;
+}
+.form-container .form-wrapper .navigate-link-wrapper a.navigate-link:hover {
+  text-decoration: underline;
+}
+/* FOOTER */
+footer {
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
