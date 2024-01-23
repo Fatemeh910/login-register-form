@@ -1,0 +1,17 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: varela;
+    background: #282a36;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@font-face {
+    font-family: "varela";
+    src: url("./varela-round.ttf");
+  }
