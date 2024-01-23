@@ -11,13 +11,99 @@
     <header class="header">
         <h1 class="header-title">Login register form</h1>
     </header>
-    
+<!--form-->
     <div class="form-container">
         <h2 class="form-title">Login form</h2>
-
+<!--button-->
         <div class="header-buttons">
-            <button class="header-btn">Login</button>
-            <button class="header-btn">Register</button>
+            <button type="button" class="header-btn login-btn active">Login</button>
+            <button type="button" class="header-btn register-btn">Register </button>
+        </div>
+<!--FORM-->
+        <div class="form-wrapper">
+<!--LOGIN FORM-->
+          <form action="#" class="form login-form active">  
+            <div class="input-box">
+               <input
+              type="text"
+              name="email"
+              required
+              autocomplete="off"
+              class="form-input"
+              placeholder="Email address"
+              /> 
+            </div>
+            <!--PASWORD INPUT-->
+            <div class="input-box">
+                <input
+                type="password"
+                name="password"
+                required
+                class="form-input password-input"
+                placeholder="Password"
+                />
+                <span class="eye-btn">
+                    <i class="fa fa-eye"></i>
+                  </span>
+            </div>
+            <!--FORGET PASWORD-->
+            <a href="#" class="forgot-pass-text">Forgot Password?</a>
+            <button type="submit" class="form-btn">Login</button>
+
+        <!-- NAVIGAGTE TO SIGNUP FORM -->
+            <div class="navigate-link-wrapper">
+                Not Registered?
+                <a href="#" class="navigate-link" data-link="register">Signup</a>
+              </div>
+              </form>
+               <!--------- REGISTER FORM --------->
+               <form action="#" class="form register-form">
+                 <!-- email input -->
+               <div class="input-box">
+                <input
+                  type="text"
+                  name="email"
+                  required
+                  autocomplete="off"
+                  class="form-input"
+                  placeholder="Email Address"
+                />
+              </div>
+               <!-- password input -->
+          <div class="input-box">
+            <input
+              type="password"
+              name="password"
+              required
+              class="form-input password-input"
+              placeholder="Password"
+            />
+            <span class="eye-btn">
+              <i class="fa fa-eye"></i>
+            </span>
+          </div>
+           <!-- confirm password input -->
+           <div class="input-box">
+            <input
+              type="password"
+              name="password"
+              required
+              class="form-input password-input"
+              placeholder="Confirm Password"
+            />
+            <span class="eye-btn">
+              <i class="fa fa-eye"></i>
+            </span>
+          </div>
+
+          <button type="submit" class="form-btn">Sign Up</button>
+
+           <!-- NAVIGAGTE TO LOGIN FORM -->
+           <div class="navigate-link-wrapper">
+            Have An Account?
+            <a href="#" class="navigate-link" data-link="login">Login</a>
+          </div>
+        </form>
 
         </div>
     </div>

@@ -15,3 +15,91 @@ body{
     font-family: "varela";
     src: url("./varela-round.ttf");
   }
+a{
+    text-decoration: none; 
+    color: inherit;
+  }
+ul {
+    list-style-type: none;
+  }
+  button,
+  input {
+    font-family: varela;
+  }
+.header{
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem 0;
+    background: #24c4d3;
+}
+.header .header-title {
+    color: #fff;
+  }
+.form-container{
+    width: 35px;
+    margin-top: 4rem;
+    background: #fff;
+    padding: 1.3rem 0.8rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.form-container .form-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .form-container .header-buttons{
+    display: flex;
+    border: 1px solid #999;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  .form-container .header-buttons .header-btn{
+    width: 100;
+    padding: 0.6rem 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  }
+  .form-container .form-wrapper .form {
+    display: none;
+  }
+  .form-container .form-wrapper .form.active {
+    display: block;
+  }
+  .form-container .header-buttons .header-btn.active {
+    background: linear-gradient(to right, #003366, #004080, #0059b3, #0073e6);
+    color: #fff;
+    cursor: auto;
+  }
+  .form-container .form-wrapper .form .input-box {
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  /* eye button */
+.form-container .form-wrapper .form .input-box .eye-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.6rem;
+  color: #777;
+  transition: all 0.3s;
+  cursor: pointer;
+  padding: 0.3rem;
+}
+.form-container .form-wrapper .form .input-box .eye-btn i {
+  pointer-events: none;
+}
+.form-container .form-wrapper .form .input-box .eye-btn:hover {
+  color: #333;
+}
+.form-container .form-wrapper .form .input-box .form-input {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px solid darkgray;
+  outline: none;
+}
