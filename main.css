@@ -36,7 +36,7 @@ ul {
     color: #fff;
   }
 .form-container{
-    width: 35px;
+    width: 350px;
     margin-top: 4rem;
     background: #fff;
     padding: 1.3rem 0.8rem;
@@ -102,4 +102,33 @@ ul {
   border-radius: 10px;
   border: 1px solid darkgray;
   outline: none;
+}
+.form-container .form-wrapper .form .input-box .password-input {
+  padding-right: 2.6rem;
+}
+.form-container .form-wrapper .form .input-box .form-input::placeholder {
+  color: #a7a7a7;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+.form-container .form-wrapper .form .input-box .form-input:focus {
+  border-color: #0059b3;
+}
+.form-container .form-wrapper .form .forgot-pass-text {
+  display: block;
+  color: #0059b3;
+}
+.form-container .form-wrapper .form .forgot-pass-text:hover {
+  text-decoration: underline;
+}
+.form-container .form-wrapper .form .form-btn {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background: linear-gradient(to left, #003366, #004080, #0059b3, #0073e6);
+  border: none;
+  color: #fff;
+  cursor: pointer;
 }
