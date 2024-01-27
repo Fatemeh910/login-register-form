@@ -41,6 +41,7 @@ eyeButtons.forEach(eye=>{
         eye.firstElementChild.classList.replace('fa-eye','fa-eye-slash');
     }else{
         input.type = 'password'
+        eye.firstElementChild.classList.replace('fa-eye-slash','fa-eye');
     }
   });
 });
