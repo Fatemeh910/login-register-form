@@ -36,10 +36,12 @@ loginButton.addEventListener('click',() =>{
 eyeButtons.forEach(eye=>{
   eye.addEventListener('click', () => {
     const input = eye.previousElementSibling;
+//CHANGE INPUT TYPE INTO TEXT
     if(input.type === 'password'){
         input.type = 'text';
         eye.firstElementChild.classList.replace('fa-eye','fa-eye-slash');
     }else{
+        //CHANGE INPUT TYPE INTO PASSWORD
         input.type = 'password'
         eye.firstElementChild.classList.replace('fa-eye-slash','fa-eye');
     }
