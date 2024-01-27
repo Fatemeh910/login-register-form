@@ -3,7 +3,7 @@ const registerButton = document.querySelector('.register-btn');
 const formTitle = document.querySelector('.form-title');
 const loginForm = document.querySelector('.login-form');
 const registerForm = document.querySelector('.register-form');
-const eyeButton = document.querySelectorAll('.eye-btn');
+const eyeButtons = document.querySelectorAll('.eye-btn');
 
 
 //SHOW REGISTER FORM WHEN CLICK TO REGISTER BUTTON
@@ -30,4 +30,16 @@ loginButton.addEventListener('click',() =>{
 //SHOW REGISTER FORM AND HIDE REGISTER FORM
     loginForm.classList.add('active');
     registerForm.classList.remove('active');
+});
+
+//SHOW PASSWORD WHEN CLICK EYE BUTTONs
+eyeButtons.forEach(eye=>{
+  eye.addEventListener('click', () => {
+    const input = eye.previousElementSibling;
+    if(input.type === 'password'){
+        input.type = 'text';
+    }else{
+        input.type = 'password'
+    }
+  });
 });
