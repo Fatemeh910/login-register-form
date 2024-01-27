@@ -38,6 +38,7 @@ eyeButtons.forEach(eye=>{
     const input = eye.previousElementSibling;
     if(input.type === 'password'){
         input.type = 'text';
+        eye.firstElementChild.classList.replace('fa-eye','fa-eye-slash');
     }else{
         input.type = 'password'
     }
