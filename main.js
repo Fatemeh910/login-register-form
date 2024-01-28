@@ -49,7 +49,14 @@ eyeButtons.forEach(eye=>{
 });
 
 navigateLinks.forEach(link =>{
-    link.addEventListener('click',()=>{
-        
-    })
-})
+    link.addEventListener('click',(e)=>{
+        e.preventDefault();
+        const dataLink = link.dataset.link;
+
+        if(dataLink === "register"){
+           registerButton.click();
+        }else if(dataLink === "login"){
+            loginButton.click();
+        }
+    });
+});
