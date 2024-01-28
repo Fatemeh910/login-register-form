@@ -4,7 +4,7 @@ const formTitle = document.querySelector('.form-title');
 const loginForm = document.querySelector('.login-form');
 const registerForm = document.querySelector('.register-form');
 const eyeButtons = document.querySelectorAll('.eye-btn');
-
+const navigateLink = document.querySelectorAll('.navigate-link')
 
 //SHOW REGISTER FORM WHEN CLICK TO REGISTER BUTTON
 registerButton.addEventListener("click", () => {
@@ -36,8 +36,8 @@ loginButton.addEventListener('click',() =>{
 eyeButtons.forEach(eye=>{
   eye.addEventListener('click', () => {
     const input = eye.previousElementSibling;
-//CHANGE INPUT TYPE INTO TEXT
     if(input.type === 'password'){
+        //CHANGE INPUT TYPE INTO TEXT
         input.type = 'text';
         eye.firstElementChild.classList.replace('fa-eye','fa-eye-slash');
     }else{
