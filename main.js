@@ -4,7 +4,7 @@ const formTitle = document.querySelector('.form-title');
 const loginForm = document.querySelector('.login-form');
 const registerForm = document.querySelector('.register-form');
 const eyeButtons = document.querySelectorAll('.eye-btn');
-const navigateLink = document.querySelectorAll('.navigate-link')
+const navigateLinks = document.querySelectorAll('.navigate-link')
 
 //SHOW REGISTER FORM WHEN CLICK TO REGISTER BUTTON
 registerButton.addEventListener("click", () => {
@@ -47,3 +47,9 @@ eyeButtons.forEach(eye=>{
     }
   });
 });
+
+navigateLinks.forEach(link =>{
+    link.addEventListener('click',()=>{
+        
+    })
+})
