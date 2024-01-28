@@ -47,7 +47,7 @@ eyeButtons.forEach(eye=>{
     }
   });
 });
-
+//TOGLE between login and register forms
 navigateLinks.forEach(link =>{
     link.addEventListener('click',(e)=>{
         e.preventDefault();
