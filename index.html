@@ -48,7 +48,7 @@
                 <i class="fa fa-eye"></i>
               </span>
               </div>
-                  <span class="alert-text" id="login-email-alert">Enter valid email baby🙄</span>
+                  <span class="alert-text" id="login-email-alert">default</span>
             </div>
             <!--FORGET PASWORD-->
             <a href="#" class="forgot-pass-text">Forgot Password?</a>
@@ -72,23 +72,28 @@
                   class="form-input"
                   placeholder="Email Address"
                 />
+                <span class="alert-text" id="login-email-alert">default</span>
               </div>
                <!-- password input -->
           <div class="input-box">
+           <div class="Password-box-inner">
             <input
-              type="password"
-              name="password"
-              
-              class="form-input password-input"
-              placeholder="Password"
-            />
-            <span class="eye-btn">
-              <i class="fa fa-eye"></i>
-            </span>
+            type="password"
+            name="password"
+            
+            class="form-input password-input"
+            placeholder="Password"
+          />
+          <span class="eye-btn">
+            <i class="fa fa-eye"></i>
+          </span>
+           </div>
+            <span class="alert-text" id="login-email-alert">default</span>
           </div>
            <!-- confirm password input -->
            <div class="input-box">
-            <input
+            <div class="Password-box-inner">
+              <input
               type="password"
               name="password"
              
@@ -97,7 +102,10 @@
             />
             <span class="eye-btn">
               <i class="fa fa-eye"></i>
-            </span>
+            </span>    
+            </div>
+            <!--alert text-->
+            <span class="alert-text" id="login-email-alert">default</span>
           </div>
 
           <button type="submit" class="form-btn">Sign Up</button>
