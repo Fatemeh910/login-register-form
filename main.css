@@ -147,3 +147,13 @@ footer {
   text-align: center;
   color: #fff;
 }
+.form-container .form-wrapper .form .alert-text{
+  display: block;
+  margin-top: 0.5rem;
+  color: #ca3b3b;
+  margin-left: 0.2rem;
+  font-size: 0.9rem;
+}
+.form-container .form-wrapper .form .input-box .form-input.wrong-input{
+  border: 1px solid #ca3b3b;
+}
