@@ -68,5 +68,7 @@ navigateLinks.forEach(link =>{
 loginEmailInput.addEventListener("input", () =>{
 const emailFormat =
  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-
-})
+ if(loginEmailInput.value.match(emailFormat)){
+    loginEmailInput.classList.add('wrong-input');
+ }
+});
