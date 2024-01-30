@@ -141,6 +141,7 @@ ul {
 .form-container .form-wrapper .navigate-link-wrapper a.navigate-link:hover {
   text-decoration: underline;
 }
+.form-container .form-wrapper .form .password-box-inner
 /* FOOTER */
 footer {
   padding: 1rem;
