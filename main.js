@@ -5,6 +5,9 @@ const loginForm = document.querySelector('.login-form');
 const registerForm = document.querySelector('.register-form');
 const eyeButtons = document.querySelectorAll('.eye-btn');
 const navigateLinks = document.querySelectorAll('.navigate-link')
+//LOGIN ELEMENT
+const loginEmailInput = document.querySelector('.login-email-input');
+const loginEmailAlert = document.querySelector('.login-email-alert');
 
 //SHOW REGISTER FORM WHEN CLICK TO REGISTER BUTTON
 registerButton.addEventListener("click", () => {
@@ -60,3 +63,10 @@ navigateLinks.forEach(link =>{
         }
     });
 });
+
+//validate login email
+loginEmailInput.addEventListener("input", () =>{
+const emailFormat =
+ /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+})
