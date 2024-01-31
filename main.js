@@ -81,4 +81,15 @@ const emailFormat =
         loginEmailInput.classList.remove('wrong-input');
         loginEmailAlert.innerText = "";
     }
-})
+});
+
+//validate login password
+loginPasswordInput.addEventListener('input',()=>{
+  if(loginPasswordInput.value.length < 6){
+    loginPasswordInput.classList.add('wrong-input');
+    loginPasswordAlert.innerText = 'enter more than 6 carecterخخخ';
+  }else{
+    loginPasswordInput.classList.remove('wrong-input');
+    loginPasswordAlert.innerText = ''
+  }
+  });
