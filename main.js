@@ -6,9 +6,13 @@ const registerForm = document.querySelector('.register-form');
 const eyeButtons = document.querySelectorAll('.eye-btn');
 const navigateLinks = document.querySelectorAll('.navigate-link')
 
+
 //LOGIN ELEMENT
 const loginEmailInput = document.getElementById('login-email-input');
 const loginEmailAlert = document.getElementById('login-email-alert');
+const loginPasswordInput = document.getElementById('login-password-input');
+const loginPasswordAlert = document.getElementById('login-password-alert');
+
 
 //SHOW REGISTER FORM WHEN CLICK TO REGISTER BUTTON
 registerButton.addEventListener("click", () => {
