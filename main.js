@@ -74,6 +74,6 @@ const emailFormat =
         loginEmailInput.classList.add('wrong-input');
         loginEmailAlert.innerText = "Enter valid email baby";
     }else{
-
+        loginEmailInput.classList.remove('wrong-input');
     }
 })
