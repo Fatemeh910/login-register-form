@@ -69,6 +69,13 @@ navigateLinks.forEach(link => {
     });
 });
 
+//validation login form
+loginForm.addEventListener('submit', (e) =>{
+    if(!validateLoginForm()){
+        e.preventDefault();
+    }
+});
+
 //validate login email
 loginEmailInput.addEventListener('input', () =>{
 const emailFormat = 
@@ -90,6 +97,21 @@ loginPasswordInput.addEventListener('input',()=>{
     loginPasswordAlert.innerText = 'enter more than 6 carecterخخخ';
   }else{
     loginPasswordInput.classList.remove('wrong-input');
-    loginPasswordAlert.innerText = ''
+    loginPasswordAlert.innerText = '';
   }
   });
+  
+  const validateLoginForm = () =>{
+    const emailFormat = 
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+    if(!loginEmailInput.value.match(emailFormat)){
+        loginEmailInput.classList.add('wrong-input');
+        loginEmailAlert.innerText = "Enter valid email baby";
+        return false;
+    }else{
+        loginEmailInput.classList.remove('wrong-input');
+        loginEmailAlert.innerText = "";
+    }
+    return true;//اگر اطلاعات درست بود
+};
