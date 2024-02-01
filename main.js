@@ -102,6 +102,7 @@ loginPasswordInput.addEventListener('input',()=>{
   });
   
   const validateLoginForm = () =>{
+    //EMAIL VALIDATION
     const emailFormat = 
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
@@ -113,5 +114,16 @@ loginPasswordInput.addEventListener('input',()=>{
         loginEmailInput.classList.remove('wrong-input');
         loginEmailAlert.innerText = "";
     }
-    return true;//اگر اطلاعات درست بود
-};
+    //PASSWORD validation
+    if(loginPasswordInput.value.length < 6){
+        loginPasswordInput.classList.add('wrong-input');
+        loginPasswordAlert.innerText = 'enter more than 6 carecterخخخ';
+        return false;
+      }else{
+        loginPasswordInput.classList.remove('wrong-input');
+        loginPasswordAlert.innerText = '';
+      }
+    
+      return true;//اگر اطلاعات درست بود
+    };
+    
